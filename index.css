@@ -1,0 +1,293 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    
+}
+
+body{
+    /*background: url('seamless2.jpg');*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: darkslategrey;
+
+}
+
+.nav{
+    /*background-color: darkolivegreen;*/
+    display: flex;
+    height: 10vh;
+}
+
+.nav ul{
+    display: flex;
+    margin: auto;
+    list-style: none;
+    
+}
+
+.nav ul a{
+    text-decoration: none;
+    color: black;
+    margin-right: 75px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.nav ul a:hover{
+    color: rgb(241, 221, 221) ;
+    font-size: 20px;
+    
+}
+
+.logo{
+    margin-left: 70px;
+    margin-top: 25px;
+    font-size: 30px;
+}
+.main-content{
+    margin-top: 100px;
+    font-size: 18px;
+}
+.about-me{
+    flex: 1;
+
+}
+.our-mission{
+    flex: 1;
+
+}
+.skills, .our-team{
+    flex: 1;
+}
+
+.first-section{
+    display: flex;
+    margin-top: 100px;
+    padding: 10px 40px;
+    margin-right: 40px;
+
+}
+.top-section{
+    width: 50vw;
+    margin: auto;
+    background: rgb(239, 245, 239);
+    padding: 2rem;
+    width: 80vw;
+}
+.top-section h3{
+    text-align: center;
+    padding: 2rem;
+    font-size: 38px;
+}
+.top-section p{
+    line-height: 2.1;
+}
+
+.about-me{
+    position: relative;
+    
+}
+.top-section{
+    border-radius: 8px;
+}
+
+.about-me::before{
+    content: '';
+    display: block;
+    width: 250px;
+    height: 1px;
+    position: absolute;
+    background:red;
+    left: 90px;
+    top: 50%;
+    z-index: -2;
+}
+.my-pool{
+    width: 100px;
+    border-radius: 50%;
+    margin-right: 2em;
+}
+
+.about-me::after{
+    content: '';
+    display: block;
+    width: 250px;
+    height: 1px;
+    position: absolute;
+    background: rgb(95, 63, 63);
+    right: 90px;
+    top: 50%;
+    z-index: -2;
+}
+
+.second-section {
+    display: flex;
+    margin-top: 100px;
+    padding: 2rem;
+    margin-right: 40px;
+    color: white;
+    width: 100%;
+    line-height: 2.1;
+}
+
+.first-section, .second-section h3{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.second-section .our-team{
+    margin-right: 3px;
+    padding-left: 80px;
+}
+
+.reg-btn {
+    margin-right: 80px;
+    margin-top: 13px;
+    display: flex;
+    height: 6vh;
+   
+}
+.reg-btn button{
+    width: 6vw;
+    margin-left: 8px;
+    text-transform: uppercase;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+}
+.more-text{
+    display: none;
+}
+.more-text2{
+    display: none;
+}
+.read-more-btn, .read-more-btn2{
+    padding: 10px;
+    font-size: 18px;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    background-color: gray;
+    color: rgb(230, 219, 219);
+}
+
+.read-more-btn2:hover{
+    background-color: white;
+    color: black;
+}
+.read-more-btn:hover{
+    background-color: white;
+    color: black;
+}
+
+#register-btn{
+    background-color: lightblue;
+    box-shadow: 2px 0px 5px ragba(0, 0, 0.5);
+}
+
+.reg-btn button:hover{
+    background-color: rgb(197, 187, 187);
+    color: white;
+}
+
+.main-footer{
+    display: flex;
+}
+
+.my-footer{
+    background-color: darkslategrey;
+    color: white;
+    height: 40vh;
+    opacity: 0.8;
+    padding-top: 250px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+.my-footer a{
+    color: white;
+}
+.my-footer a:hover{
+    color: wheat;
+}
+
+.my-footer h3{
+    color: black;
+}
+
+.policy{
+    padding-left: 60px;
+}
+.policy a:hover{
+    cursor: pointer;
+    color: rgb(168, 154, 154)
+}
+.images {
+    width: 100%;
+    border: red;
+    
+}
+
+
+@media screen and (max-width: 900px){
+    .nav ul{
+        display: block;
+        margin: auto
+         }
+    .logo{
+        display: none;
+        }
+    .nav{
+        height: 35vh;
+            
+        }
+    .nav ul li{
+        padding-top: 50px;
+        font-size: 10px;
+        }
+    .second-section{
+        display: block;  
+        }
+    }
+
+    
+
+@media screen and (max-width: 900px){
+    .nav ul a:hover{
+        font-size: 12px;
+        
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .reg-btn button{
+        position: absolute;
+        top: 400px;
+        margin-right: 400px;
+        width: 15vw;
+    }
+}
+
+
+
+@media screen and (max-width:13000px){
+    .about-me::before{
+        left: 0px;
+        width: 250px;
+    }
+    .about-me::after{
+        right: 0px;
+        width: 250px;
+    }
+}
+
+@media screen and (max-width:900px){
+    .about-me::before{
+        display: none;
+    }
+    .about-me::after{
+        display: none;
+    }
+}
