@@ -143,21 +143,6 @@ body{
     padding-left: 80px;
 }
 
-.reg-btn {
-    margin-right: 80px;
-    margin-top: 13px;
-    display: flex;
-    height: 6vh;
-   
-}
-.reg-btn button{
-    width: 6vw;
-    margin-left: 8px;
-    text-transform: uppercase;
-    border-radius: 4px;
-    outline: none;
-    border: none;
-}
 .more-text{
     display: none;
 }
